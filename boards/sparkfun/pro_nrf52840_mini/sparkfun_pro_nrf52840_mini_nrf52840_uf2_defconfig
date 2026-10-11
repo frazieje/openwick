@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: Apache-2.0
+
+CONFIG_ARM_MPU=y
+CONFIG_HW_STACK_PROTECTION=y
+
+# Enable GPIO
+CONFIG_GPIO=y
+
+# Serial console (routed to USB CDC ACM by Kconfig.defconfig)
+CONFIG_SERIAL=y
+CONFIG_CONSOLE=y
+CONFIG_UART_CONSOLE=y
+
+# Build zephyr.uf2 for drag-and-drop flashing through the Adafruit nRF52 bootloader
+CONFIG_BUILD_OUTPUT_UF2=y
+
+# Link the application into the "Application" partition at 0x26000 (after the
+# bootloader's SoftDevice S140 v6) instead of flash address 0.
+CONFIG_USE_DT_CODE_PARTITION=y

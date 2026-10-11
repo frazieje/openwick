@@ -1,0 +1,8 @@
+board:
+  name: sparkfun_pro_nrf52840_mini
+  full_name: SparkFun Pro nRF52840 Mini
+  vendor: sparkfun
+  socs:
+    - name: nrf52840
+      variants:
+        - name: uf2

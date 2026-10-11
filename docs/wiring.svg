@@ -1,0 +1,471 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2350" height="960" viewBox="0 0 2350 960">
+<style>
+  text { font-family: "DejaVu Sans", Arial, sans-serif; font-size: 13px; fill: #1d1d1d; }
+  .title { font-size: 24px; font-weight: bold; }
+  .sub { font-size: 14px; fill: #555; }
+  .h2 { font-size: 15px; font-weight: bold; }
+  .net { font-weight: bold; font-size: 12px; }
+  .small { font-size: 11px; fill: #444; }
+  .wire { stroke: #202020; stroke-width: 1.8; fill: none; }
+  .rail { stroke: #202020; stroke-width: 2.6; fill: none; }
+  .thick { stroke: #202020; stroke-width: 3; }
+  .part { stroke: #202020; stroke-width: 1.8; fill: #ffffff; }
+  .led { stroke: #202020; stroke-width: 1.5; }
+  .arrow { stroke: #202020; stroke-width: 1.2; }
+  .arrowhead { fill: #202020; }
+  .dot { fill: #202020; }
+  .flag { fill: #fff3c4; stroke: #a07800; stroke-width: 1.2; }
+  .board { fill: #c62828; stroke: #7a1515; stroke-width: 2; rx: 12; }
+  .boardtext { fill: #ffffff; font-size: 12px; }
+  .pin { fill: #e0e0e0; stroke: #555; stroke-width: 1; }
+  .pinused { fill: #ffd54f; stroke: #7a5a00; stroke-width: 1.6; }
+  .box { fill: #fafafa; stroke: #9e9e9e; stroke-width: 1.2; rx: 8; }
+</style>
+<rect width="2350" height="960" fill="#ffffff"/>
+<text class="title" x="30" y="42" text-anchor="start">OpenWick wiring</text>
+<text class="sub" x="30" y="66" text-anchor="start">SparkFun Pro nRF52840 Mini. Flames: 2N3904 low-side switches. RGB core (common cathode): 2N3906 high-side switches. All LEDs fed from the board's 3V3 pin. Yellow tags are net names: same name = same wire.</text>
+<rect class="board" x="170" y="150" width="250" height="400"/>
+<text class="boardtext" x="295.0" y="172" text-anchor="middle">SparkFun Pro nRF52840 Mini</text>
+<text class="boardtext" x="295.0" y="188" text-anchor="middle">top view, USB and JST at the top</text>
+<text class="boardtext" x="295.0" y="206" text-anchor="middle">BAT+ / BAT- pads sit beside the JST</text>
+<circle class="pinused" cx="186" cy="240" r="7"/>
+<text class="boardtext" x="200" y="244" text-anchor="start">17</text>
+<line class="wire" x1="179" y1="240" x2="168" y2="240"/>
+<polygon class="flag" points="168,240 158,230 103,230 103,250 158,250"/>
+<text class="net" x="154" y="244" text-anchor="end">rgb_b</text>
+<circle class="pinused" cx="186" cy="268" r="7"/>
+<text class="boardtext" x="200" y="272" text-anchor="start">15</text>
+<line class="wire" x1="179" y1="268" x2="168" y2="268"/>
+<polygon class="flag" points="168,268 158,258 94,258 94,278 158,278"/>
+<text class="net" x="154" y="272" text-anchor="end">flame3</text>
+<circle class="pin" cx="186" cy="296" r="7"/>
+<text class="boardtext" x="200" y="300" text-anchor="start">11</text>
+<circle class="pin" cx="186" cy="324" r="7"/>
+<text class="boardtext" x="200" y="328" text-anchor="start">8</text>
+<circle class="pinused" cx="186" cy="352" r="7"/>
+<text class="boardtext" x="200" y="356" text-anchor="start">19</text>
+<line class="wire" x1="179" y1="352" x2="168" y2="352"/>
+<polygon class="flag" points="168,352 158,342 94,342 94,362 158,362"/>
+<text class="net" x="154" y="356" text-anchor="end">flame0</text>
+<circle class="pinused" cx="186" cy="380" r="7"/>
+<text class="boardtext" x="200" y="384" text-anchor="start">20</text>
+<line class="wire" x1="179" y1="380" x2="168" y2="380"/>
+<polygon class="flag" points="168,380 158,370 94,370 94,390 158,390"/>
+<text class="net" x="154" y="384" text-anchor="end">flame1</text>
+<circle class="pinused" cx="186" cy="408" r="7"/>
+<text class="boardtext" x="200" y="412" text-anchor="start">21</text>
+<line class="wire" x1="179" y1="408" x2="168" y2="408"/>
+<polygon class="flag" points="168,408 158,398 94,398 94,418 158,418"/>
+<text class="net" x="154" y="412" text-anchor="end">flame2</text>
+<circle class="pinused" cx="186" cy="436" r="7"/>
+<text class="boardtext" x="200" y="440" text-anchor="start">22</text>
+<line class="wire" x1="179" y1="436" x2="168" y2="436"/>
+<polygon class="flag" points="168,436 158,426 103,426 103,446 158,446"/>
+<text class="net" x="154" y="440" text-anchor="end">rgb_r</text>
+<circle class="pinused" cx="186" cy="464" r="7"/>
+<text class="boardtext" x="200" y="468" text-anchor="start">23</text>
+<line class="wire" x1="179" y1="464" x2="168" y2="464"/>
+<polygon class="flag" points="168,464 158,454 103,454 103,474 158,474"/>
+<text class="net" x="154" y="468" text-anchor="end">rgb_g</text>
+<circle class="pin" cx="186" cy="492" r="7"/>
+<text class="boardtext" x="200" y="496" text-anchor="start">9</text>
+<circle class="pin" cx="186" cy="520" r="7"/>
+<text class="boardtext" x="200" y="524" text-anchor="start">10</text>
+<circle class="pin" cx="404" cy="226" r="7"/>
+<text class="boardtext" x="390" y="230" text-anchor="end">VIN</text>
+<circle class="pinused" cx="404" cy="254" r="7"/>
+<text class="boardtext" x="390" y="258" text-anchor="end">GND</text>
+<line class="wire" x1="411" y1="254" x2="422" y2="254"/>
+<polygon class="flag" points="422,254 432,244 469,244 469,264 432,264"/>
+<text class="net" x="436" y="258" text-anchor="start">GND</text>
+<circle class="pin" cx="404" cy="282" r="7"/>
+<text class="boardtext" x="390" y="286" text-anchor="end">RST</text>
+<circle class="pinused" cx="404" cy="310" r="7"/>
+<text class="boardtext" x="390" y="314" text-anchor="end">3V3</text>
+<line class="wire" x1="411" y1="310" x2="422" y2="310"/>
+<polygon class="flag" points="422,310 432,300 469,300 469,320 432,320"/>
+<text class="net" x="436" y="314" text-anchor="start">3V3</text>
+<circle class="pin" cx="404" cy="338" r="7"/>
+<text class="boardtext" x="390" y="342" text-anchor="end">4</text>
+<circle class="pin" cx="404" cy="366" r="7"/>
+<text class="boardtext" x="390" y="370" text-anchor="end">5</text>
+<circle class="pinused" cx="404" cy="394" r="7"/>
+<text class="boardtext" x="390" y="398" text-anchor="end">28</text>
+<line class="wire" x1="411" y1="394" x2="422" y2="394"/>
+<polygon class="flag" points="422,394 432,384 487,384 487,404 432,404"/>
+<text class="net" x="436" y="398" text-anchor="start">vbatt</text>
+<circle class="pin" cx="404" cy="422" r="7"/>
+<text class="boardtext" x="390" y="426" text-anchor="end">29</text>
+<circle class="pin" cx="404" cy="450" r="7"/>
+<text class="boardtext" x="390" y="454" text-anchor="end">30</text>
+<circle class="pin" cx="404" cy="478" r="7"/>
+<text class="boardtext" x="390" y="482" text-anchor="end">31</text>
+<circle class="pin" cx="404" cy="506" r="7"/>
+<text class="boardtext" x="390" y="510" text-anchor="end">3</text>
+<circle class="pin" cx="404" cy="534" r="7"/>
+<text class="boardtext" x="390" y="538" text-anchor="end">2</text>
+<text class="small" x="70" y="574" text-anchor="start">Yellow pins are the only ones we use. Pin numbers are the header labels (P0.xx).</text>
+<line class="rail" x1="550" y1="170" x2="2060" y2="170"/>
+<line class="rail" x1="550" y1="520" x2="2060" y2="520"/>
+<polygon class="flag" points="548,170 538,160 501,160 501,180 538,180"/>
+<text class="net" x="534" y="174" text-anchor="end">3V3</text>
+<polygon class="flag" points="548,520 538,510 501,510 501,530 538,530"/>
+<text class="net" x="534" y="524" text-anchor="end">GND</text>
+<text class="small" x="2068" y="174" text-anchor="start">3V3 pin (cut by the power switch)</text>
+<text class="small" x="2068" y="524" text-anchor="start">GND pin</text>
+<rect class="box" x="1552" y="322" width="496" height="86"/>
+<circle class="part" cx="696" cy="384" r="22"/>
+<line class="thick" x1="686" y1="371" x2="686" y2="397"/>
+<line class="wire" x1="660" y1="384" x2="686" y2="384"/>
+<line class="wire" x1="686" y1="378" x2="700" y2="360"/>
+<line class="wire" x1="686" y1="390" x2="700" y2="408"/>
+<polygon class="arrowhead" points="700,408 690,404 695,397"/>
+<text class="small" x="708" y="354" text-anchor="start">C</text>
+<text class="small" x="708" y="424" text-anchor="start">E</text>
+<text class="small" x="664" y="374" text-anchor="start">B</text>
+<line class="wire" x1="700" y1="408" x2="700" y2="520"/>
+<circle class="dot" cx="700" cy="520" r="3.5"/>
+<circle class="dot" cx="660" cy="384" r="3.5"/>
+<line class="wire" x1="598" y1="384" x2="612.0" y2="384"/>
+<rect class="part" x="612.0" y="377" width="34" height="14"/>
+<line class="wire" x1="646.0" y1="384" x2="660" y2="384"/>
+<text class="label" x="629.0" y="372" text-anchor="middle">1 k</text>
+<polygon class="flag" points="596,384 586,374 522,374 522,394 586,394"/>
+<text class="net" x="582" y="388" text-anchor="end">flame0</text>
+<line class="wire" x1="660" y1="384" x2="660" y2="435.0"/>
+<rect class="part" x="653" y="435.0" width="14" height="34"/>
+<line class="wire" x1="660" y1="469.0" x2="660" y2="520"/>
+<text class="label" x="648" y="456.0" text-anchor="end">100 k</text>
+<circle class="dot" cx="660" cy="520" r="3.5"/>
+<text class="small" x="708" y="454" text-anchor="start">2N3904</text>
+<circle class="dot" cx="700" cy="170" r="3.5"/>
+<line class="wire" x1="700" y1="170" x2="700" y2="193.0"/>
+<rect class="part" x="693" y="193.0" width="14" height="34"/>
+<line class="wire" x1="700" y1="227.0" x2="700" y2="250"/>
+<text class="label" x="712" y="214.0" text-anchor="start">100 R</text>
+<line class="wire" x1="700" y1="250" x2="700" y2="272.0"/>
+<polygon class="led" style="fill:#ffb300" points="687,272.0 713,272.0 700,298.0"/>
+<line class="part" x1="687" y1="298.0" x2="713" y2="298.0"/>
+<line class="wire" x1="700" y1="298.0" x2="700" y2="320"/>
+<line class="arrow" x1="717" y1="279.0" x2="729" y2="269.0"/>
+<polygon class="arrowhead" points="729,269.0 722,270.0 728,276.0"/>
+<line class="arrow" x1="717" y1="289.0" x2="729" y2="279.0"/>
+<polygon class="arrowhead" points="729,279.0 722,280.0 728,286.0"/>
+<text class="label" x="732" y="289.0" text-anchor="start">amber 5 mm</text>
+<line class="wire" x1="700" y1="320" x2="700" y2="360"/>
+<circle class="part" cx="896" cy="384" r="22"/>
+<line class="thick" x1="886" y1="371" x2="886" y2="397"/>
+<line class="wire" x1="860" y1="384" x2="886" y2="384"/>
+<line class="wire" x1="886" y1="378" x2="900" y2="360"/>
+<line class="wire" x1="886" y1="390" x2="900" y2="408"/>
+<polygon class="arrowhead" points="900,408 890,404 895,397"/>
+<text class="small" x="908" y="354" text-anchor="start">C</text>
+<text class="small" x="908" y="424" text-anchor="start">E</text>
+<text class="small" x="864" y="374" text-anchor="start">B</text>
+<line class="wire" x1="900" y1="408" x2="900" y2="520"/>
+<circle class="dot" cx="900" cy="520" r="3.5"/>
+<circle class="dot" cx="860" cy="384" r="3.5"/>
+<line class="wire" x1="798" y1="384" x2="812.0" y2="384"/>
+<rect class="part" x="812.0" y="377" width="34" height="14"/>
+<line class="wire" x1="846.0" y1="384" x2="860" y2="384"/>
+<text class="label" x="829.0" y="372" text-anchor="middle">1 k</text>
+<polygon class="flag" points="796,384 786,374 722,374 722,394 786,394"/>
+<text class="net" x="782" y="388" text-anchor="end">flame1</text>
+<line class="wire" x1="860" y1="384" x2="860" y2="435.0"/>
+<rect class="part" x="853" y="435.0" width="14" height="34"/>
+<line class="wire" x1="860" y1="469.0" x2="860" y2="520"/>
+<text class="label" x="848" y="456.0" text-anchor="end">100 k</text>
+<circle class="dot" cx="860" cy="520" r="3.5"/>
+<text class="small" x="908" y="454" text-anchor="start">2N3904</text>
+<circle class="dot" cx="900" cy="170" r="3.5"/>
+<line class="wire" x1="900" y1="170" x2="900" y2="193.0"/>
+<rect class="part" x="893" y="193.0" width="14" height="34"/>
+<line class="wire" x1="900" y1="227.0" x2="900" y2="250"/>
+<text class="label" x="912" y="214.0" text-anchor="start">100 R</text>
+<line class="wire" x1="900" y1="250" x2="900" y2="272.0"/>
+<polygon class="led" style="fill:#ffe600" points="887,272.0 913,272.0 900,298.0"/>
+<line class="part" x1="887" y1="298.0" x2="913" y2="298.0"/>
+<line class="wire" x1="900" y1="298.0" x2="900" y2="320"/>
+<line class="arrow" x1="917" y1="279.0" x2="929" y2="269.0"/>
+<polygon class="arrowhead" points="929,269.0 922,270.0 928,276.0"/>
+<line class="arrow" x1="917" y1="289.0" x2="929" y2="279.0"/>
+<polygon class="arrowhead" points="929,279.0 922,280.0 928,286.0"/>
+<text class="label" x="932" y="289.0" text-anchor="start">yellow 5 mm</text>
+<line class="wire" x1="900" y1="320" x2="900" y2="360"/>
+<circle class="part" cx="1096" cy="384" r="22"/>
+<line class="thick" x1="1086" y1="371" x2="1086" y2="397"/>
+<line class="wire" x1="1060" y1="384" x2="1086" y2="384"/>
+<line class="wire" x1="1086" y1="378" x2="1100" y2="360"/>
+<line class="wire" x1="1086" y1="390" x2="1100" y2="408"/>
+<polygon class="arrowhead" points="1100,408 1090,404 1095,397"/>
+<text class="small" x="1108" y="354" text-anchor="start">C</text>
+<text class="small" x="1108" y="424" text-anchor="start">E</text>
+<text class="small" x="1064" y="374" text-anchor="start">B</text>
+<line class="wire" x1="1100" y1="408" x2="1100" y2="520"/>
+<circle class="dot" cx="1100" cy="520" r="3.5"/>
+<circle class="dot" cx="1060" cy="384" r="3.5"/>
+<line class="wire" x1="998" y1="384" x2="1012.0" y2="384"/>
+<rect class="part" x="1012.0" y="377" width="34" height="14"/>
+<line class="wire" x1="1046.0" y1="384" x2="1060" y2="384"/>
+<text class="label" x="1029.0" y="372" text-anchor="middle">1 k</text>
+<polygon class="flag" points="996,384 986,374 922,374 922,394 986,394"/>
+<text class="net" x="982" y="388" text-anchor="end">flame2</text>
+<line class="wire" x1="1060" y1="384" x2="1060" y2="435.0"/>
+<rect class="part" x="1053" y="435.0" width="14" height="34"/>
+<line class="wire" x1="1060" y1="469.0" x2="1060" y2="520"/>
+<text class="label" x="1048" y="456.0" text-anchor="end">100 k</text>
+<circle class="dot" cx="1060" cy="520" r="3.5"/>
+<text class="small" x="1108" y="454" text-anchor="start">2N3904</text>
+<circle class="dot" cx="1100" cy="170" r="3.5"/>
+<line class="wire" x1="1100" y1="170" x2="1100" y2="193.0"/>
+<rect class="part" x="1093" y="193.0" width="14" height="34"/>
+<line class="wire" x1="1100" y1="227.0" x2="1100" y2="250"/>
+<text class="label" x="1112" y="214.0" text-anchor="start">100 R</text>
+<line class="wire" x1="1100" y1="250" x2="1100" y2="272.0"/>
+<polygon class="led" style="fill:#e53935" points="1087,272.0 1113,272.0 1100,298.0"/>
+<line class="part" x1="1087" y1="298.0" x2="1113" y2="298.0"/>
+<line class="wire" x1="1100" y1="298.0" x2="1100" y2="320"/>
+<line class="arrow" x1="1117" y1="279.0" x2="1129" y2="269.0"/>
+<polygon class="arrowhead" points="1129,269.0 1122,270.0 1128,276.0"/>
+<line class="arrow" x1="1117" y1="289.0" x2="1129" y2="279.0"/>
+<polygon class="arrowhead" points="1129,279.0 1122,280.0 1128,286.0"/>
+<text class="label" x="1132" y="289.0" text-anchor="start">red 5 mm</text>
+<line class="wire" x1="1100" y1="320" x2="1100" y2="360"/>
+<circle class="part" cx="1296" cy="384" r="22"/>
+<line class="thick" x1="1286" y1="371" x2="1286" y2="397"/>
+<line class="wire" x1="1260" y1="384" x2="1286" y2="384"/>
+<line class="wire" x1="1286" y1="378" x2="1300" y2="360"/>
+<line class="wire" x1="1286" y1="390" x2="1300" y2="408"/>
+<polygon class="arrowhead" points="1300,408 1290,404 1295,397"/>
+<text class="small" x="1308" y="354" text-anchor="start">C</text>
+<text class="small" x="1308" y="424" text-anchor="start">E</text>
+<text class="small" x="1264" y="374" text-anchor="start">B</text>
+<line class="wire" x1="1300" y1="408" x2="1300" y2="520"/>
+<circle class="dot" cx="1300" cy="520" r="3.5"/>
+<circle class="dot" cx="1260" cy="384" r="3.5"/>
+<line class="wire" x1="1198" y1="384" x2="1212.0" y2="384"/>
+<rect class="part" x="1212.0" y="377" width="34" height="14"/>
+<line class="wire" x1="1246.0" y1="384" x2="1260" y2="384"/>
+<text class="label" x="1229.0" y="372" text-anchor="middle">1 k</text>
+<polygon class="flag" points="1196,384 1186,374 1122,374 1122,394 1186,394"/>
+<text class="net" x="1182" y="388" text-anchor="end">flame3</text>
+<line class="wire" x1="1260" y1="384" x2="1260" y2="435.0"/>
+<rect class="part" x="1253" y="435.0" width="14" height="34"/>
+<line class="wire" x1="1260" y1="469.0" x2="1260" y2="520"/>
+<text class="label" x="1248" y="456.0" text-anchor="end">100 k</text>
+<circle class="dot" cx="1260" cy="520" r="3.5"/>
+<text class="small" x="1308" y="454" text-anchor="start">2N3904</text>
+<circle class="dot" cx="1264" cy="170" r="3.5"/>
+<line class="wire" x1="1264" y1="170" x2="1264" y2="193.0"/>
+<rect class="part" x="1257" y="193.0" width="14" height="34"/>
+<line class="wire" x1="1264" y1="227.0" x2="1264" y2="250"/>
+<line class="wire" x1="1264" y1="250" x2="1264" y2="272.0"/>
+<polygon class="led" style="fill:#ffe600" points="1251,272.0 1277,272.0 1264,298.0"/>
+<line class="part" x1="1251" y1="298.0" x2="1277" y2="298.0"/>
+<line class="wire" x1="1264" y1="298.0" x2="1264" y2="320"/>
+<circle class="dot" cx="1264" cy="320" r="3.5"/>
+<circle class="dot" cx="1300" cy="170" r="3.5"/>
+<line class="wire" x1="1300" y1="170" x2="1300" y2="193.0"/>
+<rect class="part" x="1293" y="193.0" width="14" height="34"/>
+<line class="wire" x1="1300" y1="227.0" x2="1300" y2="250"/>
+<line class="wire" x1="1300" y1="250" x2="1300" y2="272.0"/>
+<polygon class="led" style="fill:#e53935" points="1287,272.0 1313,272.0 1300,298.0"/>
+<line class="part" x1="1287" y1="298.0" x2="1313" y2="298.0"/>
+<line class="wire" x1="1300" y1="298.0" x2="1300" y2="320"/>
+<circle class="dot" cx="1300" cy="320" r="3.5"/>
+<circle class="dot" cx="1336" cy="170" r="3.5"/>
+<line class="wire" x1="1336" y1="170" x2="1336" y2="193.0"/>
+<rect class="part" x="1329" y="193.0" width="14" height="34"/>
+<line class="wire" x1="1336" y1="227.0" x2="1336" y2="250"/>
+<text class="label" x="1348" y="214.0" text-anchor="start">220 R</text>
+<line class="wire" x1="1336" y1="250" x2="1336" y2="272.0"/>
+<polygon class="led" style="fill:#ffe600" points="1323,272.0 1349,272.0 1336,298.0"/>
+<line class="part" x1="1323" y1="298.0" x2="1349" y2="298.0"/>
+<line class="wire" x1="1336" y1="298.0" x2="1336" y2="320"/>
+<circle class="dot" cx="1336" cy="320" r="3.5"/>
+<line class="wire" x1="1264" y1="320" x2="1336" y2="320"/>
+<line class="wire" x1="1300" y1="320" x2="1300" y2="360"/>
+<text class="small" x="1346" y="324" text-anchor="start">3 to 6 mini LEDs,</text>
+<text class="small" x="1346" y="338" text-anchor="start">one 220 R each</text>
+<circle class="part" cx="1596" cy="230" r="22"/>
+<line class="thick" x1="1586" y1="217" x2="1586" y2="243"/>
+<line class="wire" x1="1560" y1="230" x2="1586" y2="230"/>
+<line class="wire" x1="1586" y1="224" x2="1600" y2="206"/>
+<line class="wire" x1="1586" y1="236" x2="1600" y2="254"/>
+<polygon class="arrowhead" points="1586,224 1596,220 1591,213"/>
+<text class="small" x="1608" y="200" text-anchor="start">E</text>
+<text class="small" x="1608" y="270" text-anchor="start">C</text>
+<text class="small" x="1564" y="220" text-anchor="start">B</text>
+<circle class="dot" cx="1600" cy="170" r="3.5"/>
+<line class="wire" x1="1600" y1="170" x2="1600" y2="206"/>
+<circle class="dot" cx="1560" cy="230" r="3.5"/>
+<line class="wire" x1="1498" y1="230" x2="1512.0" y2="230"/>
+<rect class="part" x="1512.0" y="223" width="34" height="14"/>
+<line class="wire" x1="1546.0" y1="230" x2="1560" y2="230"/>
+<text class="label" x="1529.0" y="218" text-anchor="middle">1 k</text>
+<polygon class="flag" points="1496,230 1486,220 1431,220 1431,240 1486,240"/>
+<text class="net" x="1482" y="234" text-anchor="end">rgb_r</text>
+<line class="wire" x1="1560" y1="170" x2="1560" y2="183.0"/>
+<rect class="part" x="1553" y="183.0" width="14" height="34"/>
+<line class="wire" x1="1560" y1="217.0" x2="1560" y2="230"/>
+<text class="label" x="1548" y="204.0" text-anchor="end">10 k</text>
+<circle class="dot" cx="1560" cy="170" r="3.5"/>
+<text class="small" x="1608" y="184" text-anchor="start">2N3906</text>
+<line class="wire" x1="1600" y1="254" x2="1600" y2="275.0"/>
+<rect class="part" x="1593" y="275.0" width="14" height="34"/>
+<line class="wire" x1="1600" y1="309.0" x2="1600" y2="330"/>
+<text class="label" x="1612" y="296.0" text-anchor="start">100 R</text>
+<line class="wire" x1="1600" y1="330" x2="1600" y2="352.0"/>
+<polygon class="led" style="fill:#e53935" points="1587,352.0 1613,352.0 1600,378.0"/>
+<line class="part" x1="1587" y1="378.0" x2="1613" y2="378.0"/>
+<line class="wire" x1="1600" y1="378.0" x2="1600" y2="400"/>
+<line class="arrow" x1="1617" y1="359.0" x2="1629" y2="349.0"/>
+<polygon class="arrowhead" points="1629,349.0 1622,350.0 1628,356.0"/>
+<line class="arrow" x1="1617" y1="369.0" x2="1629" y2="359.0"/>
+<polygon class="arrowhead" points="1629,359.0 1622,360.0 1628,366.0"/>
+<text class="label" x="1632" y="369.0" text-anchor="start">R</text>
+<line class="wire" x1="1600" y1="400" x2="1600" y2="430"/>
+<circle class="dot" cx="1600" cy="430" r="3.5"/>
+<circle class="part" cx="1796" cy="230" r="22"/>
+<line class="thick" x1="1786" y1="217" x2="1786" y2="243"/>
+<line class="wire" x1="1760" y1="230" x2="1786" y2="230"/>
+<line class="wire" x1="1786" y1="224" x2="1800" y2="206"/>
+<line class="wire" x1="1786" y1="236" x2="1800" y2="254"/>
+<polygon class="arrowhead" points="1786,224 1796,220 1791,213"/>
+<text class="small" x="1808" y="200" text-anchor="start">E</text>
+<text class="small" x="1808" y="270" text-anchor="start">C</text>
+<text class="small" x="1764" y="220" text-anchor="start">B</text>
+<circle class="dot" cx="1800" cy="170" r="3.5"/>
+<line class="wire" x1="1800" y1="170" x2="1800" y2="206"/>
+<circle class="dot" cx="1760" cy="230" r="3.5"/>
+<line class="wire" x1="1698" y1="230" x2="1712.0" y2="230"/>
+<rect class="part" x="1712.0" y="223" width="34" height="14"/>
+<line class="wire" x1="1746.0" y1="230" x2="1760" y2="230"/>
+<text class="label" x="1729.0" y="218" text-anchor="middle">1 k</text>
+<polygon class="flag" points="1696,230 1686,220 1631,220 1631,240 1686,240"/>
+<text class="net" x="1682" y="234" text-anchor="end">rgb_g</text>
+<line class="wire" x1="1760" y1="170" x2="1760" y2="183.0"/>
+<rect class="part" x="1753" y="183.0" width="14" height="34"/>
+<line class="wire" x1="1760" y1="217.0" x2="1760" y2="230"/>
+<text class="label" x="1748" y="204.0" text-anchor="end">10 k</text>
+<circle class="dot" cx="1760" cy="170" r="3.5"/>
+<text class="small" x="1808" y="184" text-anchor="start">2N3906</text>
+<line class="wire" x1="1800" y1="254" x2="1800" y2="275.0"/>
+<rect class="part" x="1793" y="275.0" width="14" height="34"/>
+<line class="wire" x1="1800" y1="309.0" x2="1800" y2="330"/>
+<text class="label" x="1812" y="296.0" text-anchor="start">20 R</text>
+<line class="wire" x1="1800" y1="330" x2="1800" y2="352.0"/>
+<polygon class="led" style="fill:#43a047" points="1787,352.0 1813,352.0 1800,378.0"/>
+<line class="part" x1="1787" y1="378.0" x2="1813" y2="378.0"/>
+<line class="wire" x1="1800" y1="378.0" x2="1800" y2="400"/>
+<line class="arrow" x1="1817" y1="359.0" x2="1829" y2="349.0"/>
+<polygon class="arrowhead" points="1829,349.0 1822,350.0 1828,356.0"/>
+<line class="arrow" x1="1817" y1="369.0" x2="1829" y2="359.0"/>
+<polygon class="arrowhead" points="1829,359.0 1822,360.0 1828,366.0"/>
+<text class="label" x="1832" y="369.0" text-anchor="start">G</text>
+<line class="wire" x1="1800" y1="400" x2="1800" y2="430"/>
+<circle class="dot" cx="1800" cy="430" r="3.5"/>
+<circle class="part" cx="1996" cy="230" r="22"/>
+<line class="thick" x1="1986" y1="217" x2="1986" y2="243"/>
+<line class="wire" x1="1960" y1="230" x2="1986" y2="230"/>
+<line class="wire" x1="1986" y1="224" x2="2000" y2="206"/>
+<line class="wire" x1="1986" y1="236" x2="2000" y2="254"/>
+<polygon class="arrowhead" points="1986,224 1996,220 1991,213"/>
+<text class="small" x="2008" y="200" text-anchor="start">E</text>
+<text class="small" x="2008" y="270" text-anchor="start">C</text>
+<text class="small" x="1964" y="220" text-anchor="start">B</text>
+<circle class="dot" cx="2000" cy="170" r="3.5"/>
+<line class="wire" x1="2000" y1="170" x2="2000" y2="206"/>
+<circle class="dot" cx="1960" cy="230" r="3.5"/>
+<line class="wire" x1="1898" y1="230" x2="1912.0" y2="230"/>
+<rect class="part" x="1912.0" y="223" width="34" height="14"/>
+<line class="wire" x1="1946.0" y1="230" x2="1960" y2="230"/>
+<text class="label" x="1929.0" y="218" text-anchor="middle">1 k</text>
+<polygon class="flag" points="1896,230 1886,220 1831,220 1831,240 1886,240"/>
+<text class="net" x="1882" y="234" text-anchor="end">rgb_b</text>
+<line class="wire" x1="1960" y1="170" x2="1960" y2="183.0"/>
+<rect class="part" x="1953" y="183.0" width="14" height="34"/>
+<line class="wire" x1="1960" y1="217.0" x2="1960" y2="230"/>
+<text class="label" x="1948" y="204.0" text-anchor="end">10 k</text>
+<circle class="dot" cx="1960" cy="170" r="3.5"/>
+<text class="small" x="2008" y="184" text-anchor="start">2N3906</text>
+<line class="wire" x1="2000" y1="254" x2="2000" y2="275.0"/>
+<rect class="part" x="1993" y="275.0" width="14" height="34"/>
+<line class="wire" x1="2000" y1="309.0" x2="2000" y2="330"/>
+<text class="label" x="2012" y="296.0" text-anchor="start">20 R</text>
+<line class="wire" x1="2000" y1="330" x2="2000" y2="352.0"/>
+<polygon class="led" style="fill:#1e88e5" points="1987,352.0 2013,352.0 2000,378.0"/>
+<line class="part" x1="1987" y1="378.0" x2="2013" y2="378.0"/>
+<line class="wire" x1="2000" y1="378.0" x2="2000" y2="400"/>
+<line class="arrow" x1="2017" y1="359.0" x2="2029" y2="349.0"/>
+<polygon class="arrowhead" points="2029,349.0 2022,350.0 2028,356.0"/>
+<line class="arrow" x1="2017" y1="369.0" x2="2029" y2="359.0"/>
+<polygon class="arrowhead" points="2029,359.0 2022,360.0 2028,366.0"/>
+<text class="label" x="2032" y="369.0" text-anchor="start">B</text>
+<line class="wire" x1="2000" y1="400" x2="2000" y2="430"/>
+<circle class="dot" cx="2000" cy="430" r="3.5"/>
+<line class="wire" x1="1560" y1="430" x2="2000" y2="430"/>
+<circle class="dot" cx="1560" cy="430" r="3.5"/>
+<line class="wire" x1="1560" y1="430" x2="1560" y2="520"/>
+<circle class="dot" cx="1560" cy="520" r="3.5"/>
+<text class="h2" x="1570" y="452" text-anchor="start">10 mm diffused RGB LED, common cathode (4 legs, longest = common)</text>
+<text class="small" x="1570" y="472" text-anchor="start">common cathode straight to GND; the PNPs switch the anodes</text>
+<text class="h2" x="90" y="630" text-anchor="start">Battery sense (pin 28 / AIN4), optional</text>
+<polygon class="flag" points="110,690 120,680 166,680 166,700 120,700"/>
+<text class="net" x="124" y="694" text-anchor="start">BAT+</text>
+<text class="small" x="110" y="718" text-anchor="start">pad beside the JST</text>
+<line class="wire" x1="166" y1="690" x2="200" y2="690"/>
+<line class="wire" x1="200" y1="690" x2="223.0" y2="690"/>
+<rect class="part" x="223.0" y="683" width="34" height="14"/>
+<line class="wire" x1="257.0" y1="690" x2="280" y2="690"/>
+<text class="label" x="240.0" y="678" text-anchor="middle">1 M</text>
+<circle class="dot" cx="300" cy="690" r="3.5"/>
+<line class="wire" x1="280" y1="690" x2="320" y2="690"/>
+<line class="wire" x1="320" y1="690" x2="343.0" y2="690"/>
+<rect class="part" x="343.0" y="683" width="34" height="14"/>
+<line class="wire" x1="377.0" y1="690" x2="400" y2="690"/>
+<text class="label" x="360.0" y="678" text-anchor="middle">1 M</text>
+<line class="wire" x1="400" y1="690" x2="420" y2="690"/>
+<polygon class="flag" points="420,690 430,680 467,680 467,700 430,700"/>
+<text class="net" x="434" y="694" text-anchor="start">GND</text>
+<line class="wire" x1="300" y1="690" x2="300" y2="650"/>
+<polygon class="flag" points="300,650 310,640 365,640 365,660 310,660"/>
+<text class="net" x="314" y="654" text-anchor="start">vbatt</text>
+<line class="wire" x1="300" y1="690" x2="300" y2="715.0"/>
+<line class="part" x1="288" y1="715.0" x2="312" y2="715.0"/>
+<line class="part" x1="288" y1="725.0" x2="312" y2="725.0"/>
+<line class="wire" x1="300" y1="725.0" x2="300" y2="750"/>
+<text class="label" x="316" y="724.0" text-anchor="start">100 nF</text>
+<line class="wire" x1="300" y1="750" x2="300" y2="770"/>
+<polygon class="flag" points="300,770 310,760 347,760 347,780 310,780"/>
+<text class="net" x="314" y="774" text-anchor="start">GND</text>
+<text class="small" x="90" y="820" text-anchor="start">Reads half the cell voltage; the firmware doubles it. Without it the</text>
+<text class="small" x="90" y="836" text-anchor="start">firmware reports "battery not connected" and simply skips the cutoff.</text>
+<rect class="box" x="600" y="590" width="600" height="230"/>
+<text class="h2" x="612" y="612" text-anchor="start">If you ever swap in a common-ANODE RGB LED</text>
+<text class="small" x="612" y="632" text-anchor="start">wire its three elements exactly like the flame channels (2N3904 low side, common leg to 3V3)</text>
+<text class="small" x="612" y="648" text-anchor="start">and set the three rgb channels back to PWM_POLARITY_NORMAL in app.overlay.</text>
+<text class="small" x="612" y="680" text-anchor="start">Why the PNP for common cathode: an NPN above the LED can only reach the pin voltage</text>
+<text class="small" x="612" y="696" text-anchor="start">minus 0.7 V, about 2.6 V, which lights red but not green or blue. The PNP's emitter sits</text>
+<text class="small" x="612" y="712" text-anchor="start">on 3V3, so the element gets the full rail minus about 0.15 V, the same as the flames.</text>
+<text class="small" x="612" y="744" text-anchor="start">PNP logic is inverted: pin LOW = element on. The firmware handles that (inverted PWM),</text>
+<text class="small" x="612" y="760" text-anchor="start">and the 10 k pull-up keeps the core dark while the pins float during reset or bootloader.</text>
+<text class="small" x="612" y="792" text-anchor="start">Direct drive from the pins was the fallback: no parts, but 5 mA max per pin and almost no</text>
+<text class="small" x="612" y="808" text-anchor="start">headroom for green and blue, so a dim, red-tinted core.</text>
+<rect class="box" x="1250" y="590" width="640" height="310"/>
+<text class="h2" x="1262" y="613" text-anchor="start">Build notes</text>
+<text class="label" x="1262" y="639" text-anchor="start">2N3904 and 2N3906: flat face toward you, legs E B C from left to right.</text>
+<text class="label" x="1262" y="659" text-anchor="start">Flame channels (NPN): 1 k pin to base, 100 k base to GND, emitter to GND,</text>
+<text class="small" x="1262" y="679" text-anchor="start">   LED string from 3V3 into the collector. Pin high = LED on.</text>
+<text class="label" x="1262" y="699" text-anchor="start">RGB channels (PNP): emitter to 3V3, 1 k pin to base, 10 k base to 3V3,</text>
+<text class="small" x="1262" y="719" text-anchor="start">   collector through the resistor into the element anode. Pin low = on.</text>
+<text class="label" x="1262" y="739" text-anchor="start">One series resistor per LED, never shared between LEDs:</text>
+<text class="small" x="1262" y="759" text-anchor="start">   5 mm amber / yellow / red: 100 R (about 11 mA each)</text>
+<text class="small" x="1262" y="779" text-anchor="start">   mini LEDs in the cluster: 220 R each (about 5 mA each, 3 to 6 LEDs)</text>
+<text class="small" x="1262" y="799" text-anchor="start">   RGB red element: 100 R.  RGB green and blue elements: 20 R (10 R if too dim)</text>
+<text class="label" x="1262" y="819" text-anchor="start">All LEDs hang off the board's 3V3 pin, so the power switch cuts them too.</text>
+<text class="label" x="1262" y="839" text-anchor="start">Everything on at full brightness is about 120 mA; the 3V3 regulator gives 600 mA.</text>
+<text class="label" x="1262" y="859" text-anchor="start">The pins are plain outputs: a miswired channel just stays dark. Only connecting</text>
+<text class="small" x="1262" y="879" text-anchor="start">   3V3, VIN or a battery pad straight to a signal pin could hurt the board.</text>
+<text class="small" x="2330" y="946" text-anchor="end">generated by tools/make_wiring_diagram.py</text>
+</svg>

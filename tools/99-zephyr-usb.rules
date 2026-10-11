@@ -1,0 +1,6 @@
+# Let desktop users open the USB serial ports of Zephyr firmware (VID 2fe3) and
+# of the SparkFun UF2 bootloader (VID 1b4f) without being in the dialout group.
+# Install:  sudo install -m 644 tools/99-zephyr-usb.rules /etc/udev/rules.d/
+#           sudo udevadm control --reload-rules && sudo udevadm trigger --subsystem-match=tty
+SUBSYSTEM=="tty", ATTRS{idVendor}=="2fe3", MODE="0666", TAG+="uaccess"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1b4f", MODE="0666", TAG+="uaccess"

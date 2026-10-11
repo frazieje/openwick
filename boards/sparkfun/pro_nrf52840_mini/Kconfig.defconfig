@@ -1,0 +1,15 @@
+# SparkFun Pro nRF52840 Mini (DEV-15025) board configuration
+# SPDX-License-Identifier: Apache-2.0
+
+if BOARD_SPARKFUN_PRO_NRF52840_MINI
+
+# The "uf2" variant keeps the factory Adafruit nRF52 bootloader and has no
+# USB-to-serial bridge, so console/log/shell go over the nRF52840's own USB
+# CDC ACM port.
+if BOARD_SPARKFUN_PRO_NRF52840_MINI_NRF52840_UF2
+
+source "boards/common/usb/Kconfig.cdc_acm_serial.defconfig"
+
+endif
+
+endif # BOARD_SPARKFUN_PRO_NRF52840_MINI

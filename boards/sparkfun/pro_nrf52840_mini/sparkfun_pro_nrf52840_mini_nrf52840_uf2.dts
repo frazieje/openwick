@@ -1,0 +1,23 @@
+/*
+ * SparkFun Pro nRF52840 Mini with the factory Adafruit nRF52 UF2 bootloader
+ * (SoftDevice S140 v6.1.1 memory map: application starts at 0x26000).
+ *
+ * Console, logging and shell run over the nRF52840's native USB (CDC ACM).
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/dts-v1/;
+#include "sparkfun_pro_nrf52840_mini_common.dtsi"
+#include <nordic/nrf52840_partition_uf2_sdv6.dtsi>
+#include <../boards/common/usb/cdc_acm_serial.dtsi>
+
+/ {
+	model = "SparkFun Pro nRF52840 Mini (UF2 bootloader)";
+	compatible = "sparkfun,pro-nrf52840-mini-uf2";
+};
+
+/* The console is USB CDC ACM, so leave P0.15/P0.17 free for the application. */
+&uart0 {
+	status = "disabled";
+};

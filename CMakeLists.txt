@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: Apache-2.0
+cmake_minimum_required(VERSION 3.20.0)
+
+# The SparkFun Pro nRF52840 Mini board definition lives in this repo
+# (boards/sparkfun/pro_nrf52840_mini); tell Zephyr where to look.
+list(APPEND BOARD_ROOT ${CMAKE_CURRENT_SOURCE_DIR})
+
+find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
+project(openwick LANGUAGES C)
+
+target_sources(app PRIVATE
+  src/main.c
+  src/candle.c
+  src/candle_ble.c
+  src/battery.c
+)
+target_sources_ifdef(CONFIG_SHELL app PRIVATE src/shell_cmds.c)

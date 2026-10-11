@@ -1,0 +1,11 @@
+# Zephyr/west build output
+build/
+
+# Firmware images; the bootloader update file in bootloader/ is kept on purpose
+*.uf2
+!bootloader/*.uf2
+
+# Flash dumps written by tools/restore_bootloader.sh
+backups/
+
+__pycache__/

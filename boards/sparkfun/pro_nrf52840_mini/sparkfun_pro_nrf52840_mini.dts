@@ -1,0 +1,30 @@
+/*
+ * SparkFun Pro nRF52840 Mini, bare-metal flash layout.
+ *
+ * WARNING: this target links the application at address 0 and flashing it
+ * over SWD erases the factory UF2 bootloader. Use the ".../nrf52840/uf2"
+ * target to keep drag-and-drop flashing.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/dts-v1/;
+#include "sparkfun_pro_nrf52840_mini_common.dtsi"
+#include <nordic/nrf52840_partition.dtsi>
+
+/ {
+	model = "SparkFun Pro nRF52840 Mini";
+	compatible = "sparkfun,pro-nrf52840-mini";
+
+	chosen {
+		zephyr,console = &uart0;
+		zephyr,shell-uart = &uart0;
+		zephyr,uart-mcumgr = &uart0;
+		zephyr,bt-mon-uart = &uart0;
+		zephyr,bt-c2h-uart = &uart0;
+	};
+};
+
+&uart0 {
+	status = "okay";
+};

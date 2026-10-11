@@ -1,0 +1,16 @@
+identifier: sparkfun_pro_nrf52840_mini/nrf52840/uf2
+name: SparkFun Pro nRF52840 Mini (UF2 bootloader)
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+supported:
+  - adc
+  - ble
+  - gpio
+  - i2c
+  - pwm
+  - usbd
+  - watchdog
+vendor: sparkfun

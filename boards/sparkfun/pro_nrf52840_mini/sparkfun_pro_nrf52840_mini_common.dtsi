@@ -1,0 +1,92 @@
+/*
+ * SparkFun Pro nRF52840 Mini (DEV-15025)
+ *
+ * Raytac MDBT50Q module, Adafruit-style UF2 bootloader, MCP73831 LiPo charger,
+ * 3.3 V / 600 mA regulator behind an on/off switch, blue user LED on P0.07,
+ * user/bootloader button on P0.13 (10 k pull-up on the board), Qwiic I2C,
+ * 32.768 kHz crystal, reset on P0.18.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#include <nordic/nrf52840_qiaa.dtsi>
+#include "sparkfun_pro_nrf52840_mini-pinctrl.dtsi"
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+
+/ {
+	leds {
+		compatible = "gpio-leds";
+
+		led0: led_0 {
+			gpios = <&gpio0 7 GPIO_ACTIVE_HIGH>;
+			label = "Blue LED";
+		};
+	};
+
+	buttons {
+		compatible = "gpio-keys";
+
+		button0: button_0 {
+			/* External 10 k pull-up on the board; also the bootloader entry pin. */
+			gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
+			label = "User button";
+			zephyr,code = <INPUT_KEY_0>;
+		};
+	};
+
+	/* These aliases are provided for compatibility with samples */
+	aliases {
+		led0 = &led0;
+		sw0 = &button0;
+		watchdog0 = &wdt0;
+	};
+};
+
+&reg1 {
+	regulator-initial-mode = <NRF5X_REG_MODE_DCDC>;
+};
+
+&adc {
+	status = "okay";
+};
+
+&uicr {
+	gpio-as-nreset;
+};
+
+&gpiote {
+	status = "okay";
+};
+
+&gpio0 {
+	status = "okay";
+};
+
+&gpio1 {
+	status = "okay";
+};
+
+/* Enabled or disabled by the board variant: the UF2 variant uses USB CDC for
+ * its console and leaves these header pins free.
+ */
+&uart0 {
+	compatible = "nordic,nrf-uarte";
+	current-speed = <115200>;
+	pinctrl-0 = <&uart0_default>;
+	pinctrl-1 = <&uart0_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+/* Qwiic connector */
+&i2c0 {
+	compatible = "nordic,nrf-twi";
+	status = "okay";
+	pinctrl-0 = <&i2c0_default>;
+	pinctrl-1 = <&i2c0_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+zephyr_udc0: &usbd {
+	compatible = "nordic,nrf-usbd";
+	status = "okay";
+};
